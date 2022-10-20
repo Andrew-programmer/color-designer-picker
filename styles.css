@@ -59,8 +59,6 @@ body{
 @media screen and (max-width: 507px) {
     body{
         display: grid;
-        overflow: hidden;
+        overflow-x: hidden;
     }
-
-
 }
