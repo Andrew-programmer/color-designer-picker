@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root{
+    --font: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+.col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .4s;
+}
+
+.col-lock-button, .col-header{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.col-header{
+    transition: background .2s;
+    color: white;
+
+}
+
+.col-header:hover, .col-lock-button:hover{
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.col-lock-button{
+    transition: .2s;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: white
+}
+
+.change-button{
+    opacity: 0.5;
+    border: none;
+    box-shadow: 0 0 14px -9px;
+}
+
+@media screen and (max-width: 507px) {
+    body{
+        display: grid;
+        overflow: hidden;
+    }
+
+
+}
