@@ -53,10 +53,15 @@ body{
 .change-button{
     opacity: 0.5;
     border: none;
+    display: none;
     box-shadow: 0 0 14px -9px;
 }
 
-@media screen and (max-width: 507px) {
+@media screen and (max-width: 768px) {
+    .change-button{
+        display: block;
+    }
+
     body{
         display: grid;
         overflow-x: hidden;
